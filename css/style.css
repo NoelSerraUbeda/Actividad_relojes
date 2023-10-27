@@ -1,0 +1,89 @@
+body {
+  overflow: hidden;
+  background-color: var(--background-color);
+  font-family: "Varela Round", sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+}
+.grid-time{
+  width: 96%;
+  margin: 0 auto;
+  display: grid;
+  padding: 1%;
+  gap: 30px;
+  grid-template-columns: 49% 49%;
+  --altura: 220px;
+  grid-template-rows: var(--altura) var(--altura) var(--altura);
+}
+div[id^="time-"]{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 60px;
+  text-overflow: clip;
+}
+div[class^="clock"] svg{
+  width: 50%;
+}
+.grid-time p {
+  width: 65%;
+  height: fit-content;
+  text-align: center;
+}
+div[class^="clock"] {
+  width: 35%;
+  fill: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.outer-circle,
+.center-circle {
+  fill: rgb(0, 0, 0);
+}
+line[class^="hours"] {
+  stroke: black;
+  stroke-width: 4px;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  stroke-linecap: round;
+}
+line[class^="minutes"] {
+  stroke-width: 2px;
+  stroke: black;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  stroke-linecap: round;
+}
+line[class^="line"] {
+  stroke-width: 2px;
+  stroke: black;
+  stroke-linecap: round;
+  transform-origin: center;
+}
+input[id^="timeInput"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 60px;
+  border-radius: 15px;
+  border: 5px solid black;
+  text-align: center;
+}
+#wrong {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--red-color);
+  color: white;
+  font-size: 100px;
+  padding: 30px;
+  display: none;
+  border-radius: 25px;
+  text-align: center;
+}

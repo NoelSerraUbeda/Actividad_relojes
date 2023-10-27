@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="../../img/iconos_act/reloj1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylebackground.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quin horari tens tu?</title>
+</head>
+<body>
+    <h1 class="titulo">Quin horari tens tu?</h1>
+
+    <!-- Fondo -->
+    <main id="fondo">
+        <div class="circle cataleg"></div>
+        <div class="circle ajuda"></div>
+        <div class="circle explorador"></div>
+        <div class="circle tramits"></div>
+    </main>
+    <div class="grid-time">
+        <div id="time-1">
+            <div class="clock">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line1" />
+                </svg>
+                <input type="text" id="timeInput" placeholder="00:00" oninput="updateTime(0)" />
+            </div>
+            <p class="texto1">A quina hora t’aixeques?</p>
+        </div>
+        <div id="time-2">
+            <div class="clock2">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours2" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes2" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line2" />
+                </svg>
+                <input type="text" id="timeInput2" placeholder="00:00" oninput="updateTime(1)" />
+            </div>
+            <p class="texto2">A quina hora vas al col·legi?</p>
+        </div>
+        <div id="time-3">
+            <div class="clock3">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours3" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes3" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line3" />
+                </svg>
+                <input type="text" id="timeInput3" placeholder="00:00" oninput="updateTime(2)" />
+            </div>
+            <p class="texto2">A quina hora dines?</p>
+        </div>
+        <div id="time-4">
+            <div class="clock4">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours4" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes4" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line4" />
+                </svg>
+                <input type="text" id="timeInput4" placeholder="00:00" oninput="updateTime(3)" />
+            </div>
+            <p class="texto2">A quina hora sopes?</p>
+        </div>
+        <div id="time-5">
+            <div class="clock5">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours5" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes5" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line5" />
+                </svg>
+                <input type="text" id="timeInput5" placeholder="00:00" oninput="updateTime(4)" />
+            </div>
+            <p class="texto2">A quina hora et banyes?</p>
+        </div>
+        <div id="time-6">
+            <div class="clock6">
+                <svg class="circle" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="57" class="outer-circle" />
+                    <circle cx="60" cy="60" r="52" />
+                    <line x1="60" y1="28" x2="60" y2="60" class="hours6" />
+                    <line x1="60" y1="22" x2="60" y2="60" class="minutes6" />
+                    <circle cx="60" cy="60" r="4" class="center-circle" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                    <line x1="60" y1="18" x2="60" y2="12" class="line6" />
+                </svg>
+                <input type="text" id="timeInput6" placeholder="00:00" oninput="updateTime(5)" />
+            </div>
+            <p class="texto2">A quina hora et vas a dormir?</p>
+        </div>
+    </div>
+    <div id="wrong"></div>
+    <script src="js/script.js"></script>
+    <script src="../js/volver.js"></script>
+</body>
+
+</html>
